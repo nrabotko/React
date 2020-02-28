@@ -18,5 +18,18 @@
     "babel-preset-expo": "~8.0.0",
     "@babel/core": "^7.0.0"
   },
-  "private": true
+  "private": true,
+  "name": "reactnativeapp",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrabotko/ReactNativeApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nrabotko/ReactNativeApp/issues"
+  },
+  "homepage": "https://github.com/nrabotko/ReactNativeApp#readme",
+  "description": ""
 }
