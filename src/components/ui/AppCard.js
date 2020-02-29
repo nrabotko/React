@@ -9,6 +9,6 @@ const styles = StyleSheet.create({
     default:{
         padding: 20,
         borderWidth: 3,
-        borderColor:'red'
+        borderColor:'green'
     }
 })
