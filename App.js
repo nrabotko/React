@@ -7,10 +7,10 @@ import { Navbar } from './src/components/Navbar'
 import { MainScreen } from './src/screens/MainScreen'
 import { TodoScreen } from './src/screens/TodoScreen'
 
-async function loadApplicanion(){
+async function loadApplication() {
   await Font.loadAsync({
-    'robot-regular': require('./assets/fonts/Roboto-Regular.ttf'),
-    'robot-bold': require('./assets/fonts/Roboto-Bold.ttf')
+    'roboto-regular': require('./assets/fonts/Roboto-Regular.ttf'),
+    'roboto-bold': require('./assets/fonts/Roboto-Bold.ttf')
   })
 }
 
@@ -22,11 +22,13 @@ export default function App() {
   ])
 
   if (!isReady) {
-    return <AppLoading 
-      startAsync={loadApplicanion} 
-      onError={err => console.log(err)} 
-      onFinish={() => setIsReady(true)}
+    return (
+      <AppLoading
+        startAsync={loadApplication}
+        onError={err => console.log(err)}
+        onFinish={() => setIsReady(true)}
       />
+    )
   }
 
   const addTodo = title => {
